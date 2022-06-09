@@ -1,0 +1,421 @@
+/* header css부분 */
+header {
+    height: 600px;
+    margin:5px;
+    display:block;
+    background-image: url('image/background_img.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header article {
+    width: 32%;
+    height: 590px;
+    box-sizing: border-box;
+    margin:5px;
+    float: left;
+    margin-left:13px;
+}
+ /*  logo css부분 */
+.logo img{                                                             
+    display: block;
+    margin:auto;
+    border-radius: 90px;
+    margin-top:5px;
+}
+/*  contents css부분 */
+.contents h1{                                                           
+text-align: center;
+font-size:60px;
+font-family:'Courier New', Courier, monospace;
+margin-top: 110px;
+}
+.contents p{
+    display:block;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+}
+.contents p:nth-of-type(2){
+    background-color: rgba(175, 230, 212,0.7);
+    font-style: italic;
+}
+ /* menu css부분 */
+.menu {
+    text-align: center;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+article a{                                                             
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+.navi{
+    background-color: #B7CDDA;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.15);
+}
+.navi a{
+    width: 80px;
+    display:inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.navi a span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+
+}
+.navi a span:first-child{
+    top:0;
+    left:0;
+}
+.navi a span:last-child{
+    top:100%;
+    left:0;
+    color: rgba(16, 26, 225, 0.5)
+}
+.navi a:hover span:first-child{
+    top:-100%
+}
+.navi a:hover span:last-child{
+    top: 0;
+}
+/* About Me css부분 */
+.main_container {
+    height: 814px;
+    margin: 5px;
+    text-align: center;
+}
+.me{
+    margin:5px;
+    height: 300px;
+    box-sizing: border-box;
+}
+.me .me_img{
+    display:inline-block;
+}
+.me .me_contents{
+    display:inline-block;
+    font-size:40px;
+}
+.me div{
+    margin-top:50px;
+}
+/* information css부분 */
+.information{
+    margin:5px;
+    height: 500px;
+    box-sizing: border-box;
+}
+.information > div{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 32%;
+    height: 45%;
+    float:left;
+}
+.information>div>div:first-child{
+    display: inline-block;
+}
+.information>div>div:last-child{
+    display: inline-block;
+    margin-left:30px;
+}
+.phone div{
+    margin-left: 55px;
+}
+.education div{
+    margin-top:12px;
+    margin-left: 10px;
+    line-height: 25px;
+}
+.history_contents p,i{
+    line-height: 0px;
+    margin-bottom: 15px;
+}
+/* skill css부분 */
+.skill_container{
+    height: 1020px;
+    margin: 5px;
+    text-align: center;
+    background-color: gold;
+}
+.skill_name{
+    height: 300px;
+    margin: 5px;
+}
+.skill_name div{
+    margin-top:50px;
+}
+.skill_name .me_img{
+    display:inline-block;
+}
+.skill_name .skill_contents{
+    display:inline-block;
+    font-size:40px;
+}
+.skill_information{
+    height: 700px;
+    margin: 5px;
+}
+.skill_information>div{
+    display: inline-block;
+    height: 680px;
+    width: 48%;
+    position: relative;
+}
+.skill_information>div>h1{
+    font-size:33px;
+    color:rgb(66, 53, 53);
+    text-shadow: 5px 5px 0 skyblue, 10px 10px 0 dodgerblue; 
+}
+.skill_progress{
+    width: 500px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 7px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.skill_progress h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size:40px;
+}
+.item p{
+    overflow:hidden;
+    margin-bottom:5px;
+}
+.item p span:first-child{
+    float:left;
+}
+.item p span:last-child{
+    float:right;
+}
+.progress{
+    border: 1px solid #6cd4c4;
+    padding: 5px;
+    border-radius: 3px;
+}
+.progress_level{
+    height: 10px;
+    background: linear-gradient(to right,rgb(203, 91, 207),rgb(196, 199, 33));
+    animation-name:ani;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes ani {
+    0% {
+        width: 0;
+    }
+}
+.skill_progress .item:nth-of-type(1) .progress_level{
+    animation-delay: 0s;
+}
+.skill_progress .item:nth-of-type(2) .progress_level{
+    animation-delay: 0.1s;
+}
+.skill_progress .item:nth-of-type(3) .progress_level{
+    animation-delay: 0.3s;
+}
+.skill_progress .item:nth-of-type(4) .progress_level{
+    animation-delay: 0.5s;
+}
+.skill_progress .item:nth-of-type(5) .progress_level{
+    animation-delay: 0.7s;
+}
+.skill_progress .item:nth-of-type(6) .progress_level{
+    animation-delay: 0.9s;
+}
+/* project css부분 */
+.project_container{
+    background-color: #07E3B6;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom: 5px;
+    height: 3000px;
+    text-align: center;
+}
+.project_information{
+    box-shadow: 5px 5px 0 black;
+    display:inline-block;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: white;
+    width:80%;
+    height:40%;
+    margin:30px;
+}
+.project_name{
+    border:3px solid black;
+    line-height: 30px;
+    width: 90%;
+    height: 15%;
+    margin:25px;
+    margin-left: 65px;
+}
+.project_name h1{
+    font-size:45px;
+    text-align: center;
+}
+.project_name p{
+    font-size: 25px;
+    color: rgba(81, 76, 76,0.7);
+}
+.project_img{
+    width: 43%;
+    height: 67%;
+    float:left;
+    margin-left: 70px;
+}
+.project_contents_container{
+    border:3px solid rgba(81, 76, 76,0.7);
+    width: 43%;
+    height: 67%;
+    float:right;
+    margin-right: 70px;
+}
+.project_contents{
+    margin: 10px;
+    height: 47%;
+}
+.project_contents h4{
+    text-align: justify;
+    font-weight:normal;
+    font-size: 16px;
+}
+.project_contents .site_url{
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 rgb(35, 33, 33);
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    float:left;
+    margin:3px;
+    padding:8px;
+}
+.project_contents_container div:last-child i{
+    display: block;
+    text-align: left;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+/* app css부분 */
+.app_container{
+    background-color: #9999ff;
+    text-align: center;
+    padding:50px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.app_container h1{
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:10px;   
+}
+.app_container h3{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.app_container h5{
+    display: inline-block;
+    border: 5px solid black;
+    width: 59%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+.player{
+    border: 5px solid black;
+    background-color: #CDECF7;
+    display:inline-block;
+    width: 33.3333333%;
+    height: 550px;
+    margin: 25px;
+    overflow: auto;
+}
+.player img{
+    width: 25%;
+}
+.player p{
+    text-align: center;
+    line-height: 70px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.msg{
+    border:5px solid black;
+    margin:auto;
+    height: 250px;
+    width: 70%;
+    padding:20px
+}
+.msg h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+#app_btn{
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin:50px;
+}
+/* footer css부분 */
+.footer_container{
+    border:1px solid black;
+    height: 220px;
+    margin: 5px;
+    text-align: center;
+    background-color: #232124;
+}
+.footer_information{
+    height: 205px;
+    margin:7px;
+}
+.sns{
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(132, 127, 127);
+    text-align: center;
+    height: 185px;
+    position:relative;
+}
+.sns a{
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    margin: 15px 15px;
+}
+.sns .top_btn{
+    position: absolute;
+    right:0;
+    border: none;
+    font-size: 55px;
+    margin-right:20px;
+}
+.sns h1{
+    color:#fff;
+    font-size: 23px;
+}
